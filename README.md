@@ -64,6 +64,28 @@ Developed by   : Santhosh T
 RegisterNumber : 212223220100
 ```
 
+```verilog
+//Full adder
+
+module full_add(a,b,cin,sum,carry);
+input a,b,cin;
+output sum,carry;
+assign sum=(a^b^cin);
+assign carry=((a&b)|((a^b)&cin));
+endmodule
+```
+
+```verilog
+//Full subtractor
+
+module full_sub(a,b,bin,diff,borr);
+input a,b,bin;
+output diff,borr;
+assign diff=((~a&b)|(~(a^b)&bin));
+assign borr=((~a&b)|(b&bin)|(~a&bin));
+endmodule
+```
+
 **RTL Schematic**
 
 1. FULL ADDER
