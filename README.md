@@ -40,8 +40,11 @@ Borrow out = A'Bin + A'B + BBin
 **Truthtable**
 
 1.FULL ADDER:
+
 ![alt text](image-2.png)
+
 2.FULL SUBTRACTOR
+
 ![alt text](<Screenshot 2025-05-23 140130.png>)
 
 **Procedure**
